@@ -1,2 +1,2 @@
 #!/bin/bash
-mv [[:upper:]]* /tmp/u
+find . -maxdepth 1 -type f -name '[[:upper:]]*' | grep -v 'Best' | xargs mv -t /tmp/u
